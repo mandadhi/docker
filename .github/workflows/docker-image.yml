@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Building an image
         run: |
-          docker build -t readme:v1 ./Dockerfile
+          docker build -t readme:v1 .
       - name: saving docker image
         run: |
           docker save readme:v1 -o readme.tar

@@ -1,0 +1,23 @@
+on: 
+  push: 
+    branches:
+      - main
+  workflow_dispatch:
+jobs:
+  image-building:
+    name: image-building
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v4
+      - name: Building an image
+        run: |
+          docker build -t readme:v1 .
+      - name: saving docker image
+        run: |
+          docker save readme:v1 -o readme.tar
+      - name: uploading artifact
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: readme image
+          path: readme.tar

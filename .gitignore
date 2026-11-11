@@ -1,0 +1,13 @@
+bin/
+obj/
+logs/
+App_Data/
+*.db
+*.db-shm
+*.db-wal
+.vs/
+*.user
+publish/
+# Never commit secrets
+*.pubxml
+.env

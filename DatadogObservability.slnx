@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/DatadogObservability.Api/DatadogObservability.Api.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/DatadogObservability.Tests/DatadogObservability.Tests.csproj" />
+  </Folder>
+</Solution>
